@@ -1,0 +1,50 @@
+header {
+  height: 100vh;
+  background-color: #222;
+  padding-top: 10vh;
+  font-size: 20px;
+}
+
+header div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  text-align: center;
+}
+
+header div .name,
+header div .moreInfo {
+  font-weight: 300;
+}
+header div .job{
+  font-weight: 400;
+}
+
+.moreInfo a {
+  font-weight: 400;
+  color: #ff9999;
+  cursor: pointer;
+}
+
+header img {
+  width: 4%;
+  cursor: pointer;
+  animation: downIdle 2s infinite;
+  position: absolute;
+  left: 48%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+
+header img:hover {
+  animation: none;
+  transform: scale(1.2);
+}
+
+@keyframes downIdle {
+  0% {transform: scale(1)}
+  50% {transform: scale(1.1)}
+  100% {transform: scale(1)}
+}
