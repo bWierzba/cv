@@ -1,0 +1,9 @@
+.project-box {
+  flex-basis: 20%;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  height: 40%;
+  margin: 1.75% 5%;  
+  box-shadow:white 0 0 3px;
+  border-radius: 3%;
+} 

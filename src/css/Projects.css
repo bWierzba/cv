@@ -2,4 +2,10 @@
   background-color: #222;
   height: 100vh;
   color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
+
