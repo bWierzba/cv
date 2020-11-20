@@ -72,7 +72,7 @@ class Header extends React.Component {
           smooth={true}
           offset={0}
           duration={500}
-        ><img src={this.state.img} onMouseEnter={() => {
+        ><img alt='down arrow' src={this.state.img} onMouseEnter={() => {
           this.setState({
             img: down2
           })

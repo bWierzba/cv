@@ -6,4 +6,10 @@
   margin: 1.75% 5%;  
   box-shadow:white 0 0 3px;
   border-radius: 3%;
-} 
+  overflow: hidden;
+  background: url('../img/code.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
