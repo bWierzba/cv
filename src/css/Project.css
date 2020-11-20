@@ -11,5 +11,53 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 
+.project-box .projectTitle{
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 3% 0;
+  background-color:whitesmoke;
+  opacity: .85;
+  color: black;
+}
+
+.project-box .projectDescription {
+  opacity: 0;
+  transition: .5s;
+  background-color: black;
+  height: 100%;
+  font-size: 1.3rem;
+  padding: 5% 5%;
+}
+
+.project-box:hover .projectDescription{
+  opacity: .8;
+}
+
+.project-box .projectDescription p{
+  color: white;
+  text-align: justify;
+}
+
+.project-box .buttonContainer{
+  position: absolute;
+  left: 50%;
+  bottom: 3%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.project-box .buttonContainer a{
+  text-decoration: none;
+background-color: white;
+color: black;
+padding: 5px 10px;
+font-size: 2rem;
+margin: 0 10%;
+border-radius: 10%;
+box-shadow: 0 0 5px whitesmoke;
+height: 100%;
+opacity: .85;
+}

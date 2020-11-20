@@ -3,13 +3,18 @@ import '../css/Project.css'
 
 function Project(props) {
 
-  const { id, title, url, urlGit } = props
+  const { id, title, url, urlGit, description } = props
 
   return (
     <div key={id} className='project-box'>
       <p className='projectTitle'>{title}</p>
-      <button class='projectLive'><a href={url} target="_blank" rel="noopener noreferrer">LIVE</a></button>
-      <button class='projectGit'><a href={urlGit} target="_blank" rel="noopener noreferrer">GIT</a></button>
+      <div className='projectDescription'>
+        <p>{description}</p>
+      </div>
+      <div className='buttonContainer'>
+        <a href={url} target="_blank" rel="noopener noreferrer">live</a>
+        <a href={urlGit} target="_blank" rel="noopener noreferrer">git</a>
+      </div>
     </div>
   );
 }
