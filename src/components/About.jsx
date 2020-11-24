@@ -14,7 +14,7 @@ import visualStudio from '@iconify/icons-cib/visual-studio';
 
 
 
-const aboutMe = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, fugit unde dicta reiciendis ratione alias enim! Deleniti, atque consectetur. Minima dolores animi voluptates ab officia necessitatibus repellat? Fugiat, consequuntur ipsam. fugit unde dicta reiciendis ratione alias enim! Deleniti, atque consectetur. Minima dolores animi voluptates ab officia necessitatibus repellat? Fugiat, consequuntur ipsam.'
+const aboutMe = 'Od roku interesuję się fron-endem, każdego dnia staram się poszerzać swoje umiejętności i zdobywać nową wiedzę. Poszukuję pracy jako junior front-end developer by móc zdobywać doświadczenie komercyjne. Uwielbiam rozwiązywać problemy i widzieć wymierene efekty swojej pracy, dodatkowo intersuję się również game designem oraz fotografią.'
 
 
 

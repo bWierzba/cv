@@ -13,7 +13,7 @@ function Project(props) {
       </div>
       <div className='buttonContainer'>
         <a href={url} target="_blank" rel="noopener noreferrer">live</a>
-        <a href={urlGit} target="_blank" rel="noopener noreferrer">git</a>
+        <a href={urlGit} target="_blank" rel="noopener noreferrer">code</a>
       </div>
     </div>
   );

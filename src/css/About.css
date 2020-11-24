@@ -75,6 +75,7 @@ justify-content: center;
 .aboutMeContainer .skills svg{
   font-size: 80px;
   color: #333;
+  opacity: .9;
 }
 
 .aboutMeContainer .skills .skill {
@@ -89,4 +90,20 @@ justify-content: center;
 .aboutMeContainer .skills h1 {
   text-align: center;
   flex-basis: 100%;
+}
+
+.aboutMeContainer .skills h3 {
+  opacity: 0;
+}
+
+.aboutMeContainer .skills h3 {
+  opacity: 0;
+  transition: .5s;
+}
+
+.aboutMeContainer .skills .skill:hover h3  {
+  opacity: 1;
+}
+.aboutMeContainer .skills .skill:hover svg  {
+  opacity: 1;
 }
