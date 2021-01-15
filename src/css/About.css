@@ -1,13 +1,14 @@
 .aboutSection {
-  background-color: whitesmoke;
+  background-color: white;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
   
 }
 .aboutMeContainer {
   position: relative;
   left: 0;
-  top: 50%;
-  transform: translate(0, -50%);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -19,6 +20,7 @@
   border-radius: 1%;
   background-color: white;
 
+
 }
 
 .aboutMeContainer .aboutMe {
@@ -27,7 +29,6 @@ display: flex;
 flex-direction: column;
 text-align: center;
 justify-content: center;
-
 }
 
 .aboutMeContainer .aboutMe h1 {
@@ -35,13 +36,15 @@ justify-content: center;
   width: 30%;
   border-bottom: 2px solid #ff9999;
   padding-top: 5%;
+  font-size: 3rem;
 }
 
 .aboutMeContainer .aboutMe p {
-  font-size: 20px;
+  font-size: 1.3rem;
   width: 60%;
   margin: 5% auto 0;
   text-align: justify;
+  text-align-last: center;
   
 }
 
@@ -63,7 +66,7 @@ justify-content: center;
 
 .aboutMeContainer .aboutMe .zoom { 
   overflow: hidden;
-  width: 30%;
+  width: 35%;
   margin: 0 auto;
   border-radius: 10%;
 }
@@ -73,7 +76,7 @@ justify-content: center;
 }
 
 .aboutMeContainer .skills svg{
-  font-size: 80px;
+  font-size: 110px;
   color: #333;
   opacity: .9;
 }
@@ -90,11 +93,9 @@ justify-content: center;
 .aboutMeContainer .skills h1 {
   text-align: center;
   flex-basis: 100%;
+  font-size: 3.2rem;
 }
 
-.aboutMeContainer .skills h3 {
-  opacity: 0;
-}
 
 .aboutMeContainer .skills h3 {
   opacity: 0;
@@ -106,4 +107,45 @@ justify-content: center;
 }
 .aboutMeContainer .skills .skill:hover svg  {
   opacity: 1;
+}
+
+@media(max-width: 420px){
+
+  .aboutSection {
+    height: auto;
+  }
+  .aboutMeContainer {
+    flex-direction: column;
+    padding: 10% 0 0 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+  .aboutMeContainer .aboutMe h1 {
+    width: 80%;
+  }
+
+  .aboutMeContainer .aboutMe p {
+    font-size: 1.3rem;
+    width: 80%;   
+    margin-bottom: 5%; 
+  }
+
+  .aboutMeContainer .aboutMe .zoom { 
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10%;
+  }
+
+  .aboutMeContainer .skills h1{
+    margin-bottom: 5%;
+  }
+
+  .aboutMeContainer .skills svg{
+    font-size: 70px;
+  }
+
+  .aboutMeContainer .skills .skill {
+    margin-bottom: 5%;
+  }
 }

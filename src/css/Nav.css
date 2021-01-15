@@ -1,8 +1,34 @@
+html {
+  scroll-behavior: smooth;
+}
 nav {
   height: 10vh;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  opacity: .5;
+}
+
+nav .navImageBox{
+  position: absolute;
+  left: 96.5%;
+  top: 20%;
+  width: 2.5%;
+  cursor: pointer;
+}
+
+nav .navImageBox:hover img{
+  transform: rotate(180deg) scale(1.2);
+}
+
+nav .navImageBox img{
+  width: 100%;
+  transform: rotate(180deg);
+  transition: .3s;
+}
+
+@media (max-width: 1025px){
+  nav{
+    display: none;
+  }
 }

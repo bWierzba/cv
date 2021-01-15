@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/About.css';
 import me from '../img/me.jpg'
 import { Icon } from '@iconify/react';
+import Fade from 'react-reveal/Fade';
 import logoHtml5 from '@iconify/icons-ion/logo-html5';
 import logoCss3 from '@iconify/icons-ion/logo-css3';
 import logoGithub from '@iconify/icons-ion/logo-github';
@@ -47,20 +48,29 @@ class About extends React.Component {
   render() {
     return (
       <div className='aboutSection' id='about'>
-        <div className='aboutMeContainer'>
-          <div className='aboutMe'>
-            <div className='zoom'><img src={me} alt="" /></div>
+        <Fade left duration={500}>
+          <div className='aboutMeContainer'>
+            <div className='aboutMe'>
+              <div className='zoom'><img src={me} alt="" /></div>
 
-            <h1>o mnie</h1>
-            <p>{aboutMe}</p>
-          </div>
-          <div className='skills'>
-            <h1>Umiejętności</h1>
-            {this.skills}
-          </div>
-        </div>
+              <h1>o mnie</h1>
+              <Fade duration={2000}>
+                <p>{aboutMe}</p>
+              </Fade>
 
-      </div>
+            </div>
+
+            <div className='skills'>
+              <h1>umiejętności</h1>
+
+              {this.skills}
+
+
+            </div>
+
+          </div>
+        </Fade>
+      </div >
     );
   }
 

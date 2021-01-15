@@ -27,11 +27,6 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        {/* <div class="lines">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div> */}
 
         <div>
           <h1 className='name'>{texts[0]}</h1>

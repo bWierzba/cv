@@ -1,9 +1,8 @@
 .project-box {
-  flex-basis: 20%;
+  flex-basis: 30%;
   text-align: center;
   border: 1px solid whitesmoke;
   height: 40%;
-  margin: 1.75% 5%;  
   box-shadow:white 0 0 3px;
   border-radius: 3%;
   overflow: hidden;
@@ -28,8 +27,9 @@
   transition: .5s;
   background-color: black;
   height: 100%;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   padding: 5% 5%;
+  cursor: default
 }
 
 .project-box:hover .projectDescription{
@@ -50,14 +50,52 @@
 }
 
 .project-box .buttonContainer a{
-  text-decoration: none;
+text-decoration: none;
 background-color: white;
 color: black;
 padding: 5px 10px;
-font-size: 2rem;
+font-size: 3rem;
 margin: 0 10%;
 border-radius: 10%;
 box-shadow: 0 0 5px whitesmoke;
 height: 100%;
 opacity: .85;
+width: 40px;
+}
+
+
+@media(max-width: 420px){
+  .project-box {
+    flex-basis: 100%;
+    margin: 10% 0;
+  }
+
+  .project-box .projectTitle{
+    font-size: 1.3rem;
+  }
+
+  .project-box .projectDescription {
+    opacity: .8;
+    height: 50vh;
+    font-size: 1.2rem;
+  }
+  .project-box .projectDescription p{
+    font-size: 1.25rem;
+  }
+  .project-box .buttonContainer{
+    bottom: 1%;
+  }
+  .project-box .buttonContainer a{
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    font-size: 2rem;
+    margin: 0 10%;
+    border-radius: 10%;
+    box-shadow: 0 0 5px whitesmoke;
+    height: 100%;
+    opacity: .85;
+    width: 40px;
+    }
+  
 }

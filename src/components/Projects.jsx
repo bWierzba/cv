@@ -23,9 +23,12 @@ class Projects extends React.Component {
 
 
     return (
+
       <div className='projectsSection' id='projects'>
         {list}
-      </div>
+      </div >
+
+
     );
   }
 
