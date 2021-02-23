@@ -46,3 +46,8 @@ footer .footer-container h2{
   }
 }
 
+@media (max-width: 850px) and (orientation: landscape){
+  footer .footer-container .social{
+    margin: 10px 0;
+  }
+}

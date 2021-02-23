@@ -66,7 +66,7 @@ justify-content: center;
 
 .aboutMeContainer .aboutMe .zoom { 
   overflow: hidden;
-  width: 35%;
+  width: 40%;
   margin: 0 auto;
   border-radius: 10%;
 }
@@ -109,8 +109,7 @@ justify-content: center;
   opacity: 1;
 }
 
-@media(max-width: 420px){
-
+@media (max-width: 1025px){
   .aboutSection {
     height: auto;
   }
@@ -122,17 +121,17 @@ justify-content: center;
     background-color: white;
   }
   .aboutMeContainer .aboutMe h1 {
-    width: 80%;
+    width: 30%;
   }
 
   .aboutMeContainer .aboutMe p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     width: 80%;   
     margin-bottom: 5%; 
   }
 
   .aboutMeContainer .aboutMe .zoom { 
-    width: 80%;
+    width: 30%;
     margin: 0 auto;
     border-radius: 10%;
   }
@@ -142,10 +141,36 @@ justify-content: center;
   }
 
   .aboutMeContainer .skills svg{
-    font-size: 70px;
+    font-size: 120px;
   }
 
   .aboutMeContainer .skills .skill {
-    margin-bottom: 5%;
+    margin-bottom: 8%;
+  }
+}
+
+
+@media(max-width: 420px){
+  .aboutMeContainer .aboutMe h1 {
+    width: 80%;
+  }
+
+  .aboutMeContainer .aboutMe p {
+    font-size: 1.3rem;
+  }
+
+  .aboutMeContainer .aboutMe .zoom { 
+    width: 80%;
+  }
+
+  .aboutMeContainer .skills svg{
+    font-size: 70px;
+  }
+
+}
+
+@media(max-width: 281px){
+  .aboutMeContainer .skills h1 {
+font-size: 2rem;
   }
 }

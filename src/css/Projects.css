@@ -11,9 +11,14 @@
   margin: 0 auto;
 }
 
+@media(max-width: 1025px){
+  .projectsSection{
+    height: auto;
+  }
+}
+
 @media(max-width: 420px){
   .projectsSection{
     flex-direction: column;
-    height: auto;
   }
 }

@@ -49,6 +49,22 @@ header img:hover {
   100% {transform: scale(1)}
 }
 
+
+@media (max-width: 1025px){
+  header {
+    font-size: 30px;
+  }
+
+  header div {
+    width: 80%;
+  }
+  header img {
+    width: 15%;
+    left: 42.5%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media (max-width: 420px){
   header {
     font-size: 15px;
@@ -60,6 +76,18 @@ header img:hover {
   header img {
     width: 20%;
     left: 40%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 850px) and (orientation: landscape){
+  header {
+    font-size: 15px;
+  }
+
+  header img {
+    width: 5%;
+    left: 47.5%;
     transform: translate(-50%, -50%);
   }
 }
